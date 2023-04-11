@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>台中網頁</title>    
+  </head>
+  <body style="padding-top:50px">
+     <!-- 導覽列 -->
+	 <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="index.html">
+			我的旅遊日記
+		  </a>
+		  <div class="collapse navbar-collapse" id="navbar1">
+			<ul class="navbar-nav me-auto">
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">城市</a>
+				<div class="dropdown-menu">
+				  <a class="dropdown-item" href="taichung.html">台中</a>
+				  <a class="dropdown-item" href="tainan.html">台南</a>
+				</div>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">美食</a>
+				<div class="dropdown-menu">
+				  <a class="dropdown-item" href="#">台中</a>
+				  <a class="dropdown-item" href="#">台南</a>
+				</div>
+			  </li>
+			</ul>
+			<form class="d-flex" style="height: 40px;"  >
+			  <input class="form-control me-2" type="search" placeholder="輸入景點">
+			  <button class="btn btn-outline-primary" style="width: 80px;" type="submit">搜尋</button>
+			</form>
+		  </div>
+		</div>
+	  </nav>
+
+    <!-- 內容區 -->
+    <main>	
+      <div class="container">
+	      <h1 class="text-center mt-5">臺南市</h1>
+        <hr>
+        <div class="row">
+          <div class="col-md-7 order-md-5">
+            <p class="lead" style="text-align: justify;">
+				臺南市，通稱臺南，為中華民國直轄市，臺灣六都之一，位於臺灣西南部，其西面臨臺灣海峽、東面臨阿里山山脈、北面與嘉義縣鄰接 、南面與高雄市鄰接。面積2,191.65平方公里，為台灣各縣市中，平原區比例最大、地形最平緩的城市，農耕地面積全臺灣第一。阡陌交錯，公路道路為全臺最多，全市文化古蹟遍佈，多元文化並存。全市設籍人口約185萬人，其政府所在地分別位於安平區及新營區，採雙市政中心模式，人口最多的轄區為永康區。臺南為南臺灣，乃至於整個中南部文化、學術、教育、科技中心之一，除校本部在臺南的國立成功大學、國立臺南大學外，包含國家圖書館、中央研究院、工業技術研究院、科學園區、國立陽明交通大學南部分址均設在臺南。依據平面媒體民調，台灣縣市競爭力排名，臺南市連續4年高居六都第二名，減債能力也排名第二。現以傳統小吃、古蹟文化、夜市商圈、旅遊度假、山川田園、溫泉戲水吸引觀光人潮，並以宜居樂活城市著稱。幸福城市競爭力為六都第二名。臺南在全球化及世界城市研究網絡（GaWC）發表的2020年世界級城市名冊中被定義和歸屬於 Sufficiency（自給自足）等級的國際城市。
+			</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="./public/img/tainan1.jpg" class="img-fluid" style="height: 394px;">
+          </div>
+        </div>
+	      <hr>
+        <div class="row">
+          <div class="col-md-7">
+            <h2>安平古堡<small>（位於臺南市安平區）</small></h2>
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseContent">
+                古堡－介紹
+              </a>
+			      </p>
+            <div class="collapse" id="collapseContent">
+              <div class="card card-body">
+                17世紀初荷蘭人以軍商結合的隊伍，於1624年占領今日安平，並建熱蘭遮城為其防禦要塞，全部工程完成於1634年。1662年鄭成功取荷蘭城後，改稱安平鎮，改內城為內府，臺人因此稱其為王城。清領時代，因台江陸浮失卻其重要性，加上清兵破壞熱蘭遮城建億載金城，故日漸荒廢。日治後重建，二戰後乃稱「安平古堡」。目前真正的荷蘭時期遺跡僅存古堡前方外城南城垣的磚牆。老榕盤根，無限滄桑，見證著近400年來的台江的歷史。
+              </div>
+		        </div>
+          </div>
+          <div class="col-md-5">
+            <img src="./public/img/tainan2.jpg" class="img-fluid" style="height: 256px;">
+          </div>
+        </div>
+	    <!-- 第三個景點 -->
+	    <hr>
+        <div class="row">
+          <div class="col-md-7">
+            <h2>地形</h2>
+            <p class="lead">
+				南瀛大地貌最徹底改變的當屬清道光三年（1823年）的嘉南大水患。此次大水山洪挾帶大量土石泥沙沖入台江及倒風兩大內海，不但使曾文溪改道、鹽水溪南移，更將內海及濱海口全部填成陸地─北從鹽水港、下營茅港尾、蔴荳港到西港、安定港口、永康洲子尾以西全部陸化。今日安南區至北門地區六區大部分土地均屬之，也是「鹽分地帶」名稱之來源。
+				<br><br>
+				整體地形呈現東高西低，但無明顯的地勢起伏。東側的阿里山山脈於本市境內分岔出數條餘脈，影響本市東部的山丘地形發展，主脈則沿南化區與高雄市甲仙區的交界向南延伸，但因境內非位於主峰群區域，故缺少高聳的山峰，海拔大多為600至1000公尺間，僅少數為海拔1000公尺出頭，除有白河區的大凍山，其餘三處分布於楠西及南化等東部區域。其西側為斷層所形成的丘陵地形，高度均向西降低，以曾文溪做為分界，以北地區屬嘉義丘陵，高度位於海拔100至600公尺不等,整體平均高度在250公尺以下，最高峰為關子嶺的枕頭山（海拔648公尺），以南地區則屬新化丘陵，東緣龍船窩山與308高地等區域海拔也有300公尺左右，但大多為平均200公尺以下的低平丘陵[16]，往西則漸漸降低進入嘉南平原的範圍。嘉南平原為臺南市的主體地形，多為沖積而成，整體地貌廣大低平，但位於平原區的大臺南市西南地區隅有因斷層而隆起的相對高地，造成附近一帶高低落差相對明顯，而出現了幾個微地形的稱呼，分別為臺南臺地、大灣低地與安平平原。
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="./public/img/tainan3.jpg" class="img-fluid" style="width: 600px;height: 350px;">
+            <img src="./public/img/tainan4.jpg" class="img-fluid" style="width: 600px;height: 350px;">
+          </div>  
+	      </div>
+	</main>
+	
+    <!-- 頁尾 -->
+    <footer>
+      <div class="container">
+        <hr>
+          <p>&copy; 2023嶺東&middot;
+            <a href="#">隱私權政策</a>
+            &middot;
+            <a href="#">服務條款</a>
+            <a href="./index.html" style="padding-left: 72%;">Back to home</a>
+          </p>
+      </div>
+    </footer>	
+  </body>
+</html>

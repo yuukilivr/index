@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script> 
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      });
+    </script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      });
+    </script>
+    <title>Bootstrap網頁</title>    
+  </head>
+  <body style="padding-top:50px">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          我的旅遊日記
+        </a>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">城市</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="taichung.html">屏東</a>
+                <a class="dropdown-item" href="tainan.html">台南</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">美食</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">台中</a>
+                <a class="dropdown-item" href="#">台南</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex" style="height: 40px;"  >
+            <input class="form-control me-2" type="search" placeholder="輸入景點">
+            <button class="btn btn-outline-primary" style="width: 80px;" type="submit">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 內容區 -->
+    <main>	
+      <div class="container">
+        <h1 class="text-center mt-5">我的旅行日記</h1>
+        <!-- 第一個景點 -->
+        <div class="row">
+          <div class="col-md-7">
+            <h2><small></small></h2>
+            <p class="lead">
+              我終於踏上了這場旅程，來到了這片充滿多樣風景的土地上。作為一個台灣本地人，我感到自己應該要更加深入地探索自己的國家。這趟旅行，我決定到台灣東部的海岸線遊玩，沿途欣賞壯麗的海景與山景，一探這塊土地的自然美景。我希望這趟旅程可以讓我更了解這片土地，並且帶給我許多難忘的回憶。
+            </p>
+            <p class="lead">
+              我去過玉山和溪頭，兩者風景迥異，卻都非常壯麗。溪頭環境清幽，四周被峭壁環繞，而玉山則是茂密的竹林和高山日出。在這兩個地方漫步，彷彿身處仙境。
+            </p>
+          </div>
+          <div class="col-md-5" style="width: 500px;height: 200px;">
+            <img src="./public/img/diary.png" class="img-fluid" style="width: 500px;height: 200px;">
+          </div>
+        </div>	
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <iframe src<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d466902.99962954735!2d120.46072526016971!3d23.90097457424907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5rqq6aCt!5e0!3m2!1szh-TW!2stw!4v1681193002685!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
+                溪頭
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14638.942379150745!2d120.93931900004563!3d23.470000056849795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346f210e420ba6d1%3A0x83cb1aa521840d7e!2z546J5bGx!5e0!3m2!1szh-TW!2stw!4v1681193092133!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+                玉山
+              </button>
+            </div>
+          </div>
+        </div>
+	  </div>
+	  </main>
+    <!-- 互動視窗 -->
+    <div class="modal fade" id="myModal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">溪頭教育園區</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="h3" style="text-align: center;">美麗景色</p>
+            <img src="./public/img/Xitou.jpg" width="70%" class="img-fluid" style="display: block; margin: auto;">
+            <h4 style="text-align: center;margin-top: 10px;">溪頭森林遊樂區</h4>
+            <div style="display: flex;justify-content: center;">
+              <p style="width: 300px;margin-top: 10px;text-align: justify;">溪頭自然教育園區為一三面環山的凹谷地形，海拔最高為南面的嶺頭山 2,025m， 其向北延伸為鳳凰山脈，構成本區東界山稜，向西延伸為內樹皮山脈並轉而向北，構成本區南、西兩側之山稜界線，溪谷流貫兩山脈之間，由北出口。主要範圍之海拔在800～2,000m之間。</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 互動視窗 -->
+    <div class="modal fade" id="myModal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">玉山國家公園</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="h3" style="text-align: center;">美麗景色</p>
+            <img src="./public/img/Yushan.jpg" width="70%" class="img-fluid" style="display: block; margin: auto;">
+            <h4 style="text-align: center;margin-top: 10px;">百岳之首玉山</h4>
+            <div style="display: flex;justify-content: center;">
+              <p style="width: 300px;margin-top: 10px;text-align: justify;">玉山國家公園以玉山為名，此山系因歐亞、菲律賓板塊相擠撞而高隆，主稜脈略呈十字形，十字交點即為標高3,952公尺的主峰；園內超過3,000公尺且名列「臺灣百岳」的高山有30座，其中玉山東峰為陡立險峻的十峻之首、秀姑巒山是中央山脈第一高峰、關山是南臺首嶽、新康山為東臺一霸，這一座座高山就像眾星拱月般，將玉山圍繞襯托，也呈現山岳型國家公園的氣勢。</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 頁尾 -->
+    <footer>
+      <div class="container">
+        <hr>
+          <p>&copy; 2023嶺東&middot;
+            <a href="#">隱私權政策</a>
+            &middot;
+            <a href="#">服務條款</a>
+            <a href="#" style="padding-left: 72%;">Back to top</a>
+          </p>
+      </div>
+    </footer>
+  </body>
+</html>
